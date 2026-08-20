@@ -1,0 +1,58 @@
+@media (max-width: 991px){
+  .custom_nav-container .navbar-collapse{
+    margin-top:14px;
+    padding:14px;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    background:rgba(3,20,32,.96);
+    backdrop-filter:blur(16px);
+  }
+  .nav-cta{margin:8px 0 0;justify-content:center}
+  .slider_item-container{min-height:auto}
+  .slider_item-detail{padding-top:20px}
+  .slider_img-box{margin:45px auto 30px}
+  .slider_section .custom_carousel-control{left:15px;bottom:5px}
+  .service_section .card-deck{flex-direction:column}
+  .service_section .card{margin-bottom:0}
+  .fruit_section .row{margin-left:0!important;margin-right:0!important}
+}
+
+@media (max-width: 767px){
+  .navbar-brand img{width:170px}
+  .health-tech-strip{justify-content:flex-start;padding-top:10px}
+  .health-tech-item{font-size:.55rem}
+  .slider_section{padding:35px 0 80px}
+  .slider_item-detail{text-align:left!important}
+  .slider_item-detail h1{font-size:clamp(2.65rem,13vw,4.2rem)}
+  .slider_item-detail p{font-size:.9rem;line-height:1.75}
+  .slider_img-box:before{width:380px;height:380px}
+  .slider_img-box img{max-height:440px}
+  .service_section,.fruit_section{padding:70px 0}
+  .fruit_section .container:before{margin-bottom:45px}
+  .fruit_section .row{padding:18px 0;border-radius:22px}
+  .fruit_detail-box{padding:15px 22px}
+  .fruit_section .fruit_detail-box p{font-size:.87rem}
+  .fruit_img-box{
+    min-height:230px;
+    border-left:0;
+    border-top:1px solid rgba(7,34,52,.07);
+  }
+  .tasty_section{min-height:300px}
+  .info_section{padding:60px 0}
+  .info_section .col-md-3{margin-bottom:16px}
+}
+
+@media (max-width: 480px){
+  .custom_nav-container{padding:14px 0}
+  .health-tech-strip{display:none}
+  .slider_section{padding-top:20px}
+  .slider_item-detail h1{font-size:2.65rem}
+  .slider_item-detail p{margin-top:20px}
+  .slider_img-box img{max-height:390px}
+  .slider_section .custom_carousel-control{bottom:0}
+  .service_section .card .card-img-top{margin:22px 22px 0}
+  .service_section .card .card-body{padding:15px 22px 24px}
+  .fruit_section .fruit_detail-box h3{font-size:1.2rem}
+  .fruit_img-box img{max-height:270px}
+  .tasty_section h2{font-size:3.3rem}
+}
