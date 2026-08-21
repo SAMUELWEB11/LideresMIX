@@ -454,3 +454,802 @@ a{transition:.25s ease}
 @media (prefers-reduced-motion:reduce){
   *,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}
 }
+
+/* ==========================================================
+   LÍDERES MIXTECOS
+   SERVICIOS — GOLD / BLACK / WHITE
+   ========================================================== */
+
+.lm-services {
+    position: relative;
+    padding: 110px 0 100px;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 90% 15%,
+            rgba(190, 150, 55, 0.14),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 10% 85%,
+            rgba(255, 255, 255, 0.035),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #0b1218 0%,
+            #171b1f 50%,
+            #282820 100%
+        );
+}
+
+
+/* ==========================================================
+   AROS DEL FONDO
+   ========================================================== */
+
+.lm-services::before {
+    content: "";
+
+    position: absolute;
+
+    width: 620px;
+    height: 620px;
+
+    right: -320px;
+    top: -180px;
+
+    border: 1px solid rgba(210, 170, 75, 0.22);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 70px rgba(210, 170, 75, 0.035),
+        0 0 0 140px rgba(210, 170, 75, 0.02);
+
+    pointer-events: none;
+}
+
+
+/* Segundo aro */
+
+.lm-services::after {
+    content: "";
+
+    position: absolute;
+
+    width: 380px;
+    height: 380px;
+
+    right: -170px;
+    top: -60px;
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* ==========================================================
+   CONTENEDOR
+   ========================================================== */
+
+.lm-services-container {
+    position: relative;
+
+    width: min(1180px, calc(100% - 40px));
+
+    margin: auto;
+
+    z-index: 2;
+}
+
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+
+.lm-services-header {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    margin-bottom: 45px;
+}
+
+
+.lm-services-kicker {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 14px;
+
+    color: #d5ad50;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.18em;
+}
+
+
+.lm-services-kicker span {
+    width: 8px;
+    height: 8px;
+
+    display: inline-block;
+
+    border-radius: 50%;
+
+    background: #d5ad50;
+
+    box-shadow:
+        0 0 0 5px rgba(213, 173, 80, 0.08),
+        0 0 18px rgba(213, 173, 80, 0.6);
+}
+
+
+.lm-services-header h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(2.3rem, 4vw, 4rem);
+
+    line-height: 0.98;
+
+    font-weight: 700;
+
+    letter-spacing: -0.05em;
+}
+
+
+.lm-services-header h2 strong {
+    display: block;
+
+    color: #d5ad50;
+
+    font-weight: 700;
+}
+
+
+.lm-services-header p {
+    max-width: 390px;
+
+    margin: 0 0 5px;
+
+    color: rgba(255, 255, 255, 0.58);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* ==========================================================
+   GRID 2 X 2
+   ========================================================== */
+
+.lm-services-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+
+/* ==========================================================
+   TARJETAS
+   ========================================================== */
+
+.lm-service-card {
+    position: relative;
+
+    min-height: 315px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+
+    padding: 34px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(213, 173, 80, 0.32);
+
+    border-radius: 26px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(36, 40, 43, 0.96),
+            rgba(17, 20, 23, 0.98)
+        );
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.045);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+/* Línea dorada lateral */
+
+.lm-service-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 35px;
+    bottom: 35px;
+
+    width: 3px;
+
+    border-radius: 0 5px 5px 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent,
+            #d5ad50,
+            transparent
+        );
+}
+
+
+/* Hover */
+
+.lm-service-card:hover {
+    transform: translateY(-7px);
+
+    border-color: rgba(213, 173, 80, 0.75);
+
+    box-shadow:
+        0 30px 75px rgba(0, 0, 0, 0.45),
+        0 0 35px rgba(213, 173, 80, 0.06);
+}
+
+
+/* ==========================================================
+   NÚMERO
+   ========================================================== */
+
+.lm-service-number {
+    position: absolute;
+
+    top: 25px;
+    right: 28px;
+
+    color: rgba(213, 173, 80, 0.16);
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 54px;
+
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+
+/* ==========================================================
+   ICONO
+   ========================================================== */
+
+.lm-service-icon {
+    position: relative;
+
+    flex: 0 0 145px;
+
+    width: 145px;
+    height: 145px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border: 1px solid #d5ad50;
+
+    color: #d5ad50;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(213, 173, 80, 0.08),
+            rgba(10, 12, 14, 0.7)
+        );
+
+    font-size: 42px;
+
+    box-shadow:
+        0 0 0 8px rgba(213, 173, 80, 0.025),
+        0 0 35px rgba(213, 173, 80, 0.07);
+}
+
+
+/* Punto dorado inferior */
+
+.lm-service-icon::after {
+    content: "";
+
+    position: absolute;
+
+    width: 8px;
+    height: 8px;
+
+    bottom: -4px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+
+    background: #d5ad50;
+
+    box-shadow:
+        0 0 12px rgba(213, 173, 80, 0.7);
+}
+
+
+/* ==========================================================
+   CONTENIDO
+   ========================================================== */
+
+.lm-service-content {
+    position: relative;
+
+    z-index: 2;
+
+    flex: 1;
+}
+
+
+.lm-service-category {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #d5ad50;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.17em;
+}
+
+
+.lm-service-content h3 {
+    margin: 0 0 10px;
+
+    color: #ffffff;
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    letter-spacing: -0.035em;
+}
+
+
+.lm-service-content p {
+    max-width: 430px;
+
+    margin: 0 0 18px;
+
+    color: rgba(255, 255, 255, 0.62);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* ==========================================================
+   TAGS
+   ========================================================== */
+
+.lm-service-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-bottom: 19px;
+}
+
+
+.lm-service-tags span {
+    padding: 6px 9px;
+
+    border: 1px solid rgba(213, 173, 80, 0.16);
+
+    border-radius: 100px;
+
+    color: rgba(255, 255, 255, 0.58);
+
+    background: rgba(255, 255, 255, 0.025);
+
+    font-size: 10px;
+}
+
+
+/* ==========================================================
+   LINK
+   ========================================================== */
+
+.lm-service-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid rgba(213, 173, 80, 0.55);
+
+    color: #d5ad50 !important;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.12em;
+
+    text-decoration: none !important;
+
+    transition:
+        gap 0.25s ease,
+        color 0.25s ease;
+}
+
+
+.lm-service-link i {
+    font-size: 10px;
+}
+
+
+.lm-service-link:hover {
+    gap: 18px;
+
+    color: #f0cc76 !important;
+}
+
+
+/* ==========================================================
+   BRILLO DECORATIVO
+   ========================================================== */
+
+.lm-service-glow {
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    right: -150px;
+    bottom: -150px;
+
+    border-radius: 50%;
+
+    background: rgba(213, 173, 80, 0.08);
+
+    filter: blur(30px);
+
+    pointer-events: none;
+}
+
+
+/* ==========================================================
+   CTA INFERIOR
+   ========================================================== */
+
+.lm-services-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-top: 22px;
+
+    padding: 22px 28px;
+
+    border: 1px solid rgba(213, 173, 80, 0.2);
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            100deg,
+            rgba(10, 14, 17, 0.95),
+            rgba(38, 35, 25, 0.85)
+        );
+}
+
+
+.lm-services-bottom span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #d5ad50;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.16em;
+}
+
+
+.lm-services-bottom strong {
+    color: #ffffff;
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+
+/* BOTÓN */
+
+.lm-services-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 13px 20px;
+
+    border-radius: 100px;
+
+    color: #111 !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d5ad50,
+            #f0cc76
+        );
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.08em;
+
+    text-decoration: none !important;
+
+    box-shadow:
+        0 10px 30px rgba(213, 173, 80, 0.15);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.lm-services-button:hover {
+    transform: translateY(-3px);
+
+    color: #111 !important;
+
+    box-shadow:
+        0 15px 35px rgba(213, 173, 80, 0.25);
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 1000px) {
+
+    .lm-service-card {
+        gap: 20px;
+
+        padding: 28px;
+    }
+
+    .lm-service-icon {
+        flex-basis: 120px;
+
+        width: 120px;
+        height: 120px;
+
+        font-size: 34px;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .lm-services-header {
+        display: block;
+    }
+
+    .lm-services-header p {
+        margin-top: 20px;
+    }
+
+    .lm-services-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .lm-services {
+    position: relative;
+
+    width: 100%;
+    min-width: 100%;
+
+    padding: 110px 0 100px;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    background:
+        radial-gradient(
+            circle at 90% 15%,
+            rgba(190, 150, 55, 0.14),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 10% 85%,
+            rgba(255, 255, 255, 0.035),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #0b1218 0%,
+            #171b1f 50%,
+            #282820 100%
+        );
+}
+
+    .lm-services-container {
+    position: relative;
+
+    width: min(1180px, calc(100% - 40px));
+
+    margin: 0 auto;
+
+    z-index: 2;
+}
+
+    .lm-services-header h2 {
+        font-size: 2.35rem;
+    }
+
+    .lm-service-card {
+        display: block;
+
+        min-height: auto;
+
+        padding: 26px;
+    }
+
+    .lm-service-icon {
+        width: 105px;
+        height: 105px;
+
+        margin-bottom: 22px;
+    }
+
+    .lm-service-content h3 {
+        font-size: 24px;
+    }
+
+    .lm-service-number {
+        font-size: 42px;
+    }
+
+    .lm-services-bottom {
+        display: block;
+    }
+
+    .lm-services-button {
+        margin-top: 18px;
+    }
+
+    .lm-services,
+.lm-services-container {
+    box-sizing: border-box;
+}
+}
+
+/* ==========================================================
+   FULL WIDTH — SERVICIOS LÍDERES MIXTECOS
+   Rompe el límite del .container de Bootstrap
+   ========================================================== */
+
+.lm-services {
+    position: relative !important;
+
+    /* Ocupa todo el viewport */
+    width: 100vw !important;
+    max-width: 100vw !important;
+    min-width: 100vw !important;
+
+    /* Sale del .container padre */
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
+
+    /* Evita problemas de box sizing */
+    box-sizing: border-box !important;
+
+    padding: 110px 0 100px !important;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 90% 15%,
+            rgba(190, 150, 55, 0.14),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 10% 85%,
+            rgba(255, 255, 255, 0.035),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #0b1218 0%,
+            #171b1f 50%,
+            #282820 100%
+        ) !important;
+}
+
+
+/* El contenido interno sí permanece centrado */
+
+.lm-services-container {
+    position: relative;
+
+    width: min(1180px, calc(100% - 40px));
+
+    margin-left: auto;
+    margin-right: auto;
+
+    z-index: 2;
+}
