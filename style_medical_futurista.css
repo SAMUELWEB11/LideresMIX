@@ -258,7 +258,7 @@ button{font:inherit}
 }
 .medical-frame{
   position:relative;
-  width:min(470px,100%);
+  width:min(540px,100%);
   aspect-ratio:1/1.08;
   display:flex;
   align-items:center;
@@ -358,7 +358,7 @@ button{font:inherit}
     height: 100%;
 
     display: block;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     background: #090b0d;
     user-select: none;
@@ -1214,7 +1214,9 @@ button{font:inherit}
   .section{padding:80px 0}
   .section-shell{width:min(100% - 30px,1180px)}
   .nav-shell{width:calc(100% - 30px)}
-  .hero{padding-top:115px}
+  .hero {
+    padding-top: 115px;
+    padding-bottom: 130px;}
   .hero h1{font-size:3.35rem}
   .hero-text{font-size:14px}
   .hero-actions .btn{width:100%}
@@ -1222,25 +1224,25 @@ button{font:inherit}
   .hero-meta span{font-size:8px}
   /* HERO — MARCO RESPONSIVE */
 .medical-frame{
-  width:100%;
-  max-width:430px;
+  width: 100%;
+    max-width: 430px;
 
-  height:auto;
-  min-height:0;
+    height: auto;
+    min-height: 0;
 
-  aspect-ratio:1 / 1.08;
+    aspect-ratio: 4 / 5;
 
-  margin:0 auto;
+    margin: 0 auto;
 
-  border-radius:23px;
+    border-radius: 23px;
 
-  overflow:hidden;
+    overflow: hidden;
 }
 
 /* CARRUSEL EN MÓVIL */
 .hero-carousel{
-  width:78%;
-  height:78%;
+  width:86%;
+  height:86%;
 
   border-radius:18px;
 }
@@ -1289,7 +1291,7 @@ button{font:inherit}
   bottom:45px;
   left:8px;
 }
-  .trust-bar{width:calc(100% - 30px);grid-template-columns:1fr;margin-top:-15px}
+  .trust-bar{width:calc(100% - 30px);grid-template-columns:1fr;margin: top 0;}
   .trust-item{border-right:0!important;border-bottom:1px solid var(--line)!important}
   .trust-item:last-child{border-bottom:0!important}
   .services-grid{grid-template-columns:1fr}
