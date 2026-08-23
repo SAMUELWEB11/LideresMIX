@@ -1319,3 +1319,45 @@ button{font:inherit}
   html{scroll-behavior:auto}
   *,*:before,*:after{transition:none!important}
 }
+/* =========================
+   FIX DEFINITIVO MOBILE HERO
+   ========================= */
+
+@media (max-width: 620px){
+
+  /* El hero debe contener completamente el carrusel */
+  .hero{
+    height:auto;
+    min-height:0;
+    padding-top:115px;
+    padding-bottom:70px;
+    overflow:hidden;
+  }
+
+  /* Marco del carrusel */
+  .medical-frame{
+    width:100%;
+    max-width:430px;
+    aspect-ratio:4 / 5;
+    height:auto;
+    margin:0 auto;
+    overflow:hidden;
+  }
+
+  /* Carrusel */
+  .hero-carousel{
+    width:86%;
+    height:86%;
+    margin:0 auto;
+    overflow:hidden;
+  }
+
+  /* La barra NO debe montarse sobre el hero */
+  .trust-bar{
+    width:calc(100% - 30px);
+    margin:25px auto 0 !important;
+    position:relative;
+    z-index:10;
+  }
+
+}
