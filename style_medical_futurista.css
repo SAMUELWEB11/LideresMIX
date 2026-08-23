@@ -304,8 +304,8 @@ button{font:inherit}
     position: relative;
     z-index: 2;
 
-    width: 78%;
-    height: 78%;
+    width: 86%;
+    height: 86%;
 
     overflow: hidden;
 
@@ -354,14 +354,13 @@ button{font:inherit}
 }
 
 .carousel-slide img {
-    width: 100%;
+   width: 100%;
     height: 100%;
 
     display: block;
-
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
-
+    background: #090b0d;
     user-select: none;
 
     -webkit-user-drag: none;
@@ -379,8 +378,8 @@ button{font:inherit}
 
     z-index: 8;
 
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
 
     display: flex;
 
