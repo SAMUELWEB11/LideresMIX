@@ -1,534 +1,444 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="salud, estudios médicos, suplementos, Medical Pro Way, bienestar" />
-  <meta name="description" content="Medical Pro Way A.C. — información sobre estudios médicos, servicios de salud y suplementos alimenticios." />
-  <meta name="author" content="" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-  <link href="images/logo.png" rel="icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Líderes Mixtecos A.C. — servicios de salud, diagnóstico y prevención en San Pedro Cholula, Puebla.">
+  <meta name="theme-color" content="#0b0d0f">
+  <title>Líderes Mixtecos A.C. | Salud, diagnóstico y prevención</title>
 
-  <title>LIDERES MIXTECOS A.C.</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
-
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="bootstrap(1).css" />
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-  <!-- Custom styles for this template -->
-  <link href="style_medical_futurista.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="responsive_medical_futurista.css" rel="stylesheet" />
+  <link rel="stylesheet" href="lideres_mixtecos.css">
 </head>
 
 <body>
-  <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-          <a class="navbar-brand navbar navbar-expand-lg custom_nav-container pt-3" href="">
-            <img src="images/logo.png" alt="" class="img-fluid" />
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex ml-auto flex-column flex-lg-row align-items-lg-center">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#inicio">INICIO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pag2_medical_futurista.html">ESTUDIOS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#productos">SUPLEMENTOS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contacto">CONTACTO</a>
-                </li>
-              </ul>
-              <a class="nav-cta" href="http://wa.link/dk0aqt" target="_blank" rel="noopener">
-                <i class="fab fa-whatsapp"></i> ¡CONTÁCTANOS!
-              </a>
-            </div>
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="inicio">
+    <div class="nav-shell">
+      <a class="brand" href="#inicio" aria-label="Líderes Mixtecos A.C.">
+        <img src="images/logo.png" alt="Líderes Mixtecos A.C.">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a class="active" href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a class="nav-button" href="http://wa.link/dk0aqt" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i> Agendar
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero-orbit hero-orbit-one"></div>
+      <div class="hero-orbit hero-orbit-two"></div>
+      <div class="hero-grid"></div>
+
+      <div class="hero-shell">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            ATENCIÓN · DIAGNÓSTICO · PREVENCIÓN
           </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
-    <!-- slider section -->
-    <section class="health-tech-strip">
-      <div class="health-tech-item"><span class="pulse-dot"></span> ATENCIÓN MÉDICA</div>
-      <div class="health-tech-item"><i class="fas fa-microscope"></i> TECNOLOGÍA &amp; DIAGNÓSTICO</div>
-      <div class="health-tech-item"><i class="fas fa-shield-alt"></i> ENFOQUE EN PREVENCIÓN</div>
-    </section>
-    <section id="inicio" class="slider_section position-relative">
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="slider_item-box">
-              <div class="slider_item-container">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="slider_item-detail">
-                        <div>
-                          <h1>
-                            Colposcopia
-                          </h1>
-                          <p class="text-justify">
-                            La colposcopia es un procedimiento médico ginecológico que permite examinar de manera detallada el cuello uterino, la vagina y la vulva utilizando un instrumento llamado colposcopio, el cual proporciona una visión ampliada y luminosa de estas áreas. 
-                           Durante el procedimiento, el médico puede aplicar una solución especial en el área para resaltar posibles zonas anormales y, si es necesario, tomar una biopsia (muestra de tejido) para un análisis más profundo. La colposcopia es un procedimiento rápido, poco invasivo y fundamental para la detección temprana de enfermedades ginecológicas.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="slider_img-box">
-                        <div>
-                          <img src="images/ColpoInic.png" alt="" class="" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="slider_item-box">
-              <div class="slider_item-container">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="slider_item-detail">
-                        <div>
-                          <h1>
-                            Electrocardiograma
-                          </h1>
-                          <p class="text-justify">
-                            Un electrocardiograma (ECG) es un examen médico que registra la actividad eléctrica del corazón a lo largo del tiempo. Se realiza mediante electrodos colocados sobre la piel del pecho, brazos y piernas, los cuales captan las señales eléctricas que el corazón genera durante cada latido. Esta información se representa en una gráfica que muestra el ritmo y la frecuencia cardíaca, así como la forma en que las señales se propagan por las distintas partes del corazón. 
-              El electrocardiograma es una herramienta fundamental para diagnosticar problemas como arritmias, alteraciones en la conducción eléctrica, cardiopatías, infartos o isquemias. Es un procedimiento rápido, indoloro y no invasivo, ampliamente utilizado en la evaluación de la salud cardiovascular.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="slider_img-box">
-                        <div>
-                          <img src="images/electrog.gif" alt="" class="" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="slider_item-box">
-              <div class="slider_item-container">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="slider_item-detail">
-                        <div>
-                          <h1>
-                            PROCESO DE ESTUDIOS:
-                          </h1>
-                          <p class="text-justify">
-                            •La atención medica es de un horario de 09:00am a 4:00pm (Con posibilidad a cambio dependiendo sus horas laborales). 
-              •Todos pueden pasar considerando que la  atención máxima por día es de 50 pacientes de  ULTRASONIDO y 25 de colposcopias, los pacientes pueden pasar a ambos estudios. 
-              •La toma de estudios dura al rededor de 15 a  20 minutos por paciente, posterior se le asignara una consulta totalmente gratis y si en su diagnostico se encuentra alguna enfermedad por medio de la jornadas  se le proporciona tratamiento con descuento. 
-              •Las imágenes de estudios por medio de la campaña no es posible su impresión, se entregara su diagnostico únicamente.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="slider_img-box">
-                        <div>
-                          <img src="images/procsIn.gif" alt="" class="" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="custom_carousel-control">
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-      
-    </section>
 
-    <!-- end slider section -->
-  </div>
-
-  <!-- service section -->
-   
-
-  <section id="servicios" class="service_section layout_padding ">
-    <div class="container">
-      <h2 class="custom_heading">LÍDERES MIXTECOS</h2>
-      <p class="custom_heading-text">
-  
-        
-      </p>
-      <div class="social_container" style="margin-bottom: 40px;">
-        <h5>
-          ¡CONTÁCTANOS EN CUALQUIERA DE NUESTRAS REDES!
-        </h5>
-        <div class="social-box" style="display: flex; align-items: center;">
-          <a href="https://www.facebook.com/profile.php?id=61569856618521">
-            <img src="images/fb.png" alt="">
-          </a>
-          <a href="https://www.instagram.com/medical_proway1/">
-            <img src="images/instagram.png" alt="">
-          </a>
-          <a href="http://wa.link/dk0aqt">
-            <img src="images/Whatss.png" alt="">
-          </a>
-          <div class="arrow-container" style="display: flex; align-items: center; gap: 5px; margin-left: 10px;">
-            <img class="arrow" src="images/flechagif.gif" alt="Flecha animada" style="width: 70px; height: auto;">
-            <span>¡Haz click!</span>
-          </div>
-        </div>
-      </div>
-      
-      <!-- =========================================================
-     SERVICIOS LÍDERES MIXTECOS
-     ========================================================= -->
-<section id="servicios-salud" class="lm-services">
-
-    <div class="lm-services-container">
-
-        <!-- ENCABEZADO -->
-        <div class="lm-services-header">
-
-            <div>
-                <span class="lm-services-kicker">
-                    <span></span>
-                    SERVICIOS DE SALUD
-                </span>
-
-                <h2>
-                    Atención y diagnóstico
-                    <strong>integral</strong>
-                </h2>
-            </div>
-
-            <p>
-                Conozca los principales servicios de salud disponibles
-                en Líderes Mixtecos A.C.
-            </p>
-
-        </div>
-
-
-        <!-- GRID DE SERVICIOS -->
-        <div class="lm-services-grid">
-
-
-            <!-- 01 ULTRASONIDOS -->
-            <article class="lm-service-card">
-
-                <div class="lm-service-number">01</div>
-
-                <div class="lm-service-icon">
-                    <i class="fas fa-wave-square"></i>
-                </div>
-
-                <div class="lm-service-content">
-
-                    <span class="lm-service-category">
-                        DIAGNÓSTICO
-                    </span>
-
-                    <h3>Ultrasonidos</h3>
-
-                    <p>
-                        Estudios de ultrasonido para la valoración
-                        de diferentes órganos y regiones del cuerpo.
-                    </p>
-
-                    <div class="lm-service-tags">
-                        <span>Riñones</span>
-                        <span>Hígado</span>
-                        <span>Vesícula</span>
-                        <span>Próstata</span>
-                        <span>Ovarios</span>
-                        <span>Vejiga</span>
-                    </div>
-
-                    <a href="pag2_medical_futurista.html"
-                       class="lm-service-link">
-                        VER SERVICIOS
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-
-                </div>
-
-                <div class="lm-service-glow"></div>
-
-            </article>
-
-
-            <!-- 02 COLPOSCOPIAS -->
-            <article class="lm-service-card">
-
-                <div class="lm-service-number">02</div>
-
-                <div class="lm-service-icon">
-                    <i class="fas fa-female"></i>
-                </div>
-
-                <div class="lm-service-content">
-
-                    <span class="lm-service-category">
-                        SALUD FEMENINA
-                    </span>
-
-                    <h3>Colposcopias</h3>
-
-                    <p>
-                        Estudios orientados a la valoración ginecológica
-                        y atención preventiva de la salud femenina.
-                    </p>
-
-                    <div class="lm-service-tags">
-                        <span>Colposcopia</span>
-                        <span>Prevención</span>
-                        <span>Salud femenina</span>
-                    </div>
-
-                    <a href="pag2_medical_futurista.html"
-                       class="lm-service-link">
-                        VER SERVICIOS
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-
-                </div>
-
-                <div class="lm-service-glow"></div>
-
-            </article>
-
-
-            <!-- 03 SUPLEMENTOS -->
-            <article class="lm-service-card">
-
-                <div class="lm-service-number">03</div>
-
-                <div class="lm-service-icon">
-                    <i class="fas fa-capsules"></i>
-                </div>
-
-                <div class="lm-service-content">
-
-                    <span class="lm-service-category">
-                        BIENESTAR
-                    </span>
-
-                    <h3>Suplementos</h3>
-
-                    <p>
-                        Complementos alimenticios seleccionados para
-                        acompañar el bienestar y cuidado diario.
-                    </p>
-
-                    <div class="lm-service-tags">
-                        <span>Bienestar</span>
-                        <span>Nutrición</span>
-                        <span>Cuidado</span>
-                    </div>
-
-                    <a href="#productos"
-                       class="lm-service-link">
-                        VER SUPLEMENTOS
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-
-                </div>
-
-                <div class="lm-service-glow"></div>
-
-            </article>
-
-
-            <!-- 04 ESTUDIOS GENERALES -->
-            <article class="lm-service-card">
-
-                <div class="lm-service-number">04</div>
-
-                <div class="lm-service-icon">
-                    <i class="fas fa-heartbeat"></i>
-                </div>
-
-                <div class="lm-service-content">
-
-                    <span class="lm-service-category">
-                        VALORACIÓN
-                    </span>
-
-                    <h3>Estudios Generales</h3>
-
-                    <p>
-                        Valoraciones básicas para conocer y registrar
-                        datos generales del estado de salud.
-                    </p>
-
-                    <div class="lm-service-tags">
-                        <span>Presión</span>
-                        <span>Peso</span>
-                        <span>Altura</span>
-                    </div>
-
-                    <a href="pag2_medical_futurista.html"
-                       class="lm-service-link">
-                        VER ESTUDIOS
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-
-                </div>
-
-                <div class="lm-service-glow"></div>
-
-            </article>
-
-        </div>
-
-
-        <!-- CTA -->
-        <div class="lm-services-bottom">
-
-            <div>
-                <span>ATENCIÓN Y PREVENCIÓN</span>
-
-                <strong>
-                    Cuide su salud. Conozca nuestros servicios.
-                </strong>
-            </div>
-
-            <a href="http://wa.link/dk0aqt"
-               target="_blank"
-               rel="noopener"
-               class="lm-services-button">
-
-                <i class="fab fa-whatsapp"></i>
-
-                CONTÁCTENOS
-
+          <h1>
+            Su salud merece
+            <span>atención.</span>
+          </h1>
+
+          <p class="hero-text">
+            En <strong>Líderes Mixtecos A.C.</strong> acercamos servicios de salud
+            y estudios diagnósticos con un enfoque humano, accesible y preventivo.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="http://wa.link/dk0aqt" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i>
+              Agendar / consultar
             </a>
+            <a class="btn btn-outline" href="#servicios">
+              Conocer servicios
+              <i class="fas fa-arrow-down"></i>
+            </a>
+          </div>
 
+          <div class="hero-meta">
+            <div>
+              <strong>09:00–16:00</strong>
+              <span>Horario de atención publicado</span>
+            </div>
+            <div class="meta-line"></div>
+            <div>
+              <strong>15–20 min</strong>
+              <span>Duración aproximada de estudios</span>
+            </div>
+          </div>
         </div>
 
-    </div>
-
-</section>
-      <div class="d-flex justify-content-center">
-      </div>
-    </div>
-  </section>
-
-  <!-- end service section -->
-
-  <!-- fruits section -->
-
-  <section id="productos" class="fruit_section">
-    <div class="container">
-      <div class="section-kicker">CATÁLOGO DE BIENESTAR</div>
-      <h2 class="custom_heading">SUPLEMENTOS ALIMENTICIOS</h2>
-      <p class="custom_heading-text">
-      </p>
-      
-      </div>
-    </div>   
-  </section>
-
-  <!-- end fruits section -->
-
-  <!-- tasty section -->
-  <section class="tasty_section">
-    <div class="container_fluid">
-      <h2>
-        LÍDERES MIXTECOS A.C.
-      </h2>
-    </div>
-  </section>
-
-  <!-- end tasty section -->
-
-  <!-- client section -->
-
-
-
-  <!-- end client section -->
-   
-
-  <section id="contacto" class="info_section layout_padding">
-    <section class="info_section layout_padding reduce-space3 custom-container">
-      <div class="container">
-        <div class="row">
-          <!-- Dirección -->
-          <div class="col-md-3">
-            <h5>
-              <i class="fas fa-map-marker-alt icon-red"></i> DIRECCIÓN:
-            </h5>          
-            <ul>
-              <li>
-                PLAZA ALTAREZ AVENIDA 29 ORIENTE Y 6 SUR NUMERO 601 “CUAZITLA U OPATENCO” 7B SAN PEDRO CHOLULA, PUEBLA.
-              </li>
-            </ul>
+        <div class="hero-visual">
+          <div class="medical-frame">
+            <div class="frame-label">LÍDERES MIXTECO​S A.C.</div>
+            <img src="images/ColpoInic.png" alt="Estudio de colposcopia">
+            <div class="medical-card medical-card-top">
+              <i class="fas fa-shield-alt"></i>
+              <div>
+                <strong>Prevención</strong>
+                <span>Detección oportuna</span>
+              </div>
+            </div>
+            <div class="medical-card medical-card-bottom">
+              <i class="fas fa-user-md"></i>
+              <div>
+                <strong>Atención profesional</strong>
+                <span>Diagnóstico y seguimiento</span>
+              </div>
+            </div>
           </div>
-    
-          <!-- Teléfono -->
-          <div class="col-md-3">
-            <h5>
-              <i class="fas fa-phone-alt"></i> TELÉFONO:
-            </h5>
-            <ul>
-              <li>
-                2212648516
-              </li>
-            </ul>
-          </div>
-    
-          <!-- Espacio para más contenido -->
-          
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <span>SCROLL</span>
+        <span class="scroll-line"></span>
+        <span>CONOZCA NUESTROS SERVICIOS</span>
+      </div>
     </section>
-    
-  </section>
 
+    <!-- ================= TRUST BAR ================= -->
+    <section class="trust-bar">
+      <div class="trust-item">
+        <i class="fas fa-heartbeat"></i>
+        <div><strong>Atención médica</strong><span>Enfoque humano y preventivo</span></div>
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-microscope"></i>
+        <div><strong>Diagnóstico</strong><span>Estudios para valoración de salud</span></div>
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-clock"></i>
+        <div><strong>Atención</strong><span>09:00 a 16:00</span></div>
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div><strong>San Pedro Cholula</strong><span>Puebla</span></div>
+      </div>
+    </section>
 
-  <script type="text/javascript" src="jquery-3.4.1.min(1).js"></script>
-  <script type="text/javascript" src="bootstrap(1).js"></script>
+    <!-- ================= SERVICES ================= -->
+    <section class="services section" id="servicios">
+      <div class="section-shell">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">01 / SERVICIOS DE SALUD</span>
+            <h2>Atención y diagnóstico<br><span>integral.</span></h2>
+          </div>
+          <p>
+            Conozca los principales servicios disponibles en Líderes Mixtecos A.C.,
+            orientados a la prevención, valoración y bienestar.
+          </p>
+        </div>
 
-  <section class="container-fluid footer_section">
-    <p><span>LÍDERES MIXTECOS A.C.</span> <b>•</b> Salud, tecnología y bienestar</p>
-  </section>
+        <div class="services-grid">
+
+          <article class="service-card service-featured">
+            <span class="service-number">01</span>
+            <div class="service-icon"><i class="fas fa-wave-square"></i></div>
+            <span class="service-label">DIAGNÓSTICO</span>
+            <h3>Ultrasonidos</h3>
+            <p>Estudios de ultrasonido para la valoración de diferentes órganos y regiones del cuerpo.</p>
+            <div class="tag-list">
+              <span>Riñones</span><span>Hígado</span><span>Vesícula</span>
+              <span>Próstata</span><span>Ovarios</span><span>Vejiga</span>
+            </div>
+            <a href="#contacto" class="card-link">Consultar disponibilidad <i class="fas fa-arrow-right"></i></a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <div class="service-icon"><i class="fas fa-female"></i></div>
+            <span class="service-label">SALUD FEMENINA</span>
+            <h3>Ultrasonido mamario</h3>
+            <p>Estudio de imagen enfocado en la valoración de las glándulas mamarias.</p>
+            <div class="service-mini">
+              <span><i class="fas fa-check"></i> Diagnóstico</span>
+              <span><i class="fas fa-check"></i> Atención profesional</span>
+            </div>
+            <a href="#contacto" class="card-link">Consultar <i class="fas fa-arrow-right"></i></a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <div class="service-icon"><i class="fas fa-notes-medical"></i></div>
+            <span class="service-label">SALUD GINECOLÓGICA</span>
+            <h3>Colposcopias</h3>
+            <p>Servicio de colposcopia como parte de la atención ginecológica y prevención de la salud femenina.</p>
+            <div class="service-mini">
+              <span><i class="fas fa-check"></i> Prevención</span>
+              <span><i class="fas fa-check"></i> Estudio</span>
+            </div>
+            <a href="#proceso" class="card-link">Conocer proceso <i class="fas fa-arrow-right"></i></a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">04</span>
+            <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
+            <span class="service-label">VALORACIÓN</span>
+            <h3>Estudios generales</h3>
+            <p>Valoraciones básicas para conocer y registrar datos generales del paciente.</p>
+            <div class="health-data">
+              <div><i class="fas fa-heartbeat"></i><strong>Presión</strong></div>
+              <div><i class="fas fa-weight"></i><strong>Peso</strong></div>
+              <div><i class="fas fa-ruler-vertical"></i><strong>Altura</strong></div>
+            </div>
+            <a href="#contacto" class="card-link">Consultar <i class="fas fa-arrow-right"></i></a>
+          </article>
+
+          <article class="service-card service-wide">
+            <div class="service-wide-copy">
+              <span class="service-label">SALUD CARDIOVASCULAR</span>
+              <h3>Electrocardiograma</h3>
+              <p>
+                Examen que registra la actividad eléctrica del corazón. El sitio actual
+                lo describe como un procedimiento rápido, indoloro y no invasivo.
+              </p>
+              <a href="#contacto" class="card-link">Solicitar información <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="ecg-visual">
+              <div class="ecg-line"></div>
+              <span>ECG</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESS ================= -->
+    <section class="process section-dark" id="proceso">
+      <div class="section-shell">
+        <div class="section-heading section-heading-dark">
+          <div>
+            <span class="section-kicker">02 / JORNADAS Y ATENCIÓN</span>
+            <h2>Un proceso claro<br><span>para usted.</span></h2>
+          </div>
+          <p>
+            La información publicada por la organización establece un flujo de atención
+            pensado para facilitar el acceso a los estudios.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <span>01</span>
+            <i class="fas fa-calendar-check"></i>
+            <h3>Acuda a atención</h3>
+            <p>Horario publicado de 09:00 a 16:00, sujeto a posibles cambios.</p>
+          </div>
+          <div class="process-step">
+            <span>02</span>
+            <i class="fas fa-user-md"></i>
+            <h3>Realice su estudio</h3>
+            <p>La toma de estudios dura aproximadamente entre 15 y 20 minutos por paciente.</p>
+          </div>
+          <div class="process-step">
+            <span>03</span>
+            <i class="fas fa-file-medical"></i>
+            <h3>Reciba su diagnóstico</h3>
+            <p>Posteriormente se asigna una consulta totalmente gratuita.</p>
+          </div>
+          <div class="process-step">
+            <span>04</span>
+            <i class="fas fa-hand-holding-heart"></i>
+            <h3>Seguimiento</h3>
+            <p>Si se detecta una enfermedad durante las jornadas, se proporciona tratamiento con descuento.</p>
+          </div>
+        </div>
+
+        <div class="capacity">
+          <div>
+            <span class="capacity-label">CAPACIDAD PUBLICADA POR DÍA</span>
+            <strong>50 <small>ultrasonidos</small></strong>
+          </div>
+          <div class="capacity-divider"></div>
+          <div>
+            <strong>25 <small>colposcopias</small></strong>
+          </div>
+          <p>Los pacientes pueden pasar a ambos estudios.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about section" id="nosotros">
+      <div class="section-shell about-grid">
+        <div class="about-visual">
+          <div class="about-image">
+            <img src="images/procsIn.gif" alt="Proceso de atención y estudios">
+          </div>
+          <div class="about-badge">
+            <span>A.C.</span>
+            <strong>Comprometidos<br>con la comunidad</strong>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <span class="section-kicker">03 / QUIÉNES SOMOS</span>
+          <h2>Salud con un<br><span>propósito humano.</span></h2>
+          <p class="lead">
+            Somos una Asociación Civil comprometida con el bienestar de nuestra comunidad.
+            Nuestro principal objetivo es acercar servicios esenciales que impacten
+            positivamente en la calidad de vida de las personas, especialmente aquellas
+            en situación de vulnerabilidad.
+          </p>
+
+          <div class="mission-grid">
+            <div>
+              <span>MISIÓN</span>
+              <p>
+                Proporcionar servicios de salud integrales, personalizados y de alta calidad,
+                mediante profesionales comprometidos con la excelencia.
+              </p>
+            </div>
+            <div>
+              <span>VISIÓN</span>
+              <p>
+                Ser líderes en servicios de salud de alta calidad, innovadores y accesibles,
+                contribuyendo al bienestar y calidad de vida.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SUPPLEMENTS ================= -->
+    <section class="wellness section">
+      <div class="section-shell wellness-inner">
+        <div>
+          <span class="section-kicker">04 / BIENESTAR</span>
+          <h2>Suplementos<br><span>alimenticios.</span></h2>
+          <p>
+            El sitio contempla un catálogo de bienestar y suplementos alimenticios.
+            Esta sección queda preparada para incorporar posteriormente los productos,
+            información y disponibilidad correspondientes.
+          </p>
+        </div>
+        <div class="wellness-symbol">
+          <i class="fas fa-capsules"></i>
+          <span>BIENESTAR</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta">
+      <div class="cta-orbit"></div>
+      <div class="section-shell cta-inner">
+        <div>
+          <span class="section-kicker">¿NECESITA INFORMACIÓN?</span>
+          <h2>Hable con nosotros.</h2>
+          <p>Consulte disponibilidad, horarios y opciones de atención directamente por WhatsApp.</p>
+        </div>
+        <a class="btn btn-gold btn-large" href="http://wa.link/dk0aqt" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i>
+          Agendar / consultar
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact section" id="contacto">
+      <div class="section-shell">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">05 / CONTACTO</span>
+            <h2>Estamos<br><span>para atenderle.</span></h2>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>DIRECCIÓN</span>
+            <p>
+              Plaza Altarez, Avenida 29 Oriente y 6 Sur No. 601,
+              “Cuazitla u Opateno” 7B,<br>
+              San Pedro Cholula, Puebla.
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <i class="fas fa-phone-alt"></i>
+            <span>TELÉFONO</span>
+            <a href="tel:2212648516">221 264 8516</a>
+          </div>
+
+          <div class="contact-card">
+            <i class="fab fa-whatsapp"></i>
+            <span>WHATSAPP</span>
+            <a href="http://wa.link/dk0aqt" target="_blank" rel="noopener">Agendar / consultar</a>
+          </div>
+        </div>
+
+        <div class="social-row">
+          <span>SÍGANOS EN REDES</span>
+          <div>
+            <a href="https://www.facebook.com/profile.php?id=61569856618521" target="_blank" rel="noopener" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/medical_proway1/" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="http://wa.link/dk0aqt" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="section-shell footer-inner">
+      <span>LÍDERES MIXTE​COS A.C.</span>
+      <span>Salud · Diagnóstico · Prevención</span>
+      <span>San Pedro Cholula, Puebla</span>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+
+    document.querySelectorAll('.main-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+
 </body>
-
 </html>
