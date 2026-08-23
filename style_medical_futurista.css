@@ -1158,8 +1158,14 @@ button{font:inherit}
 }
 @media(max-width:850px){
   .site-header{position:absolute}
-  .nav-shell{min-height:78px}
-  .brand img{width:155px}
+  .nav-shell{
+    position:relative;
+    min-height:132px;
+  }
+  .brand img{
+    width:min(300px,calc(100vw - 88px));
+    max-height:120px;
+  }
   .menu-toggle{
     display:flex;
     width:43px;height:43px;
@@ -1175,7 +1181,7 @@ button{font:inherit}
   .menu-toggle span{width:18px;height:1px;background:#fff}
   .main-nav{
     position:absolute;
-    top:72px;
+    top:calc(100% - 8px);
     left:0;right:0;
     display:none;
     flex-direction:column;
@@ -1189,7 +1195,7 @@ button{font:inherit}
   .main-nav.open{display:flex}
   .main-nav>a{padding:13px 14px}
   .nav-button{margin:5px 0 0!important;text-align:center}
-  .hero{height:auto;min-height:0;padding:130px 0 90px}
+  .hero{height:auto;min-height:0;padding:165px 0 90px}
   .hero-shell{
     grid-template-columns:1fr;
     gap:55px;
@@ -1215,8 +1221,14 @@ button{font:inherit}
   .section-shell{width:min(100% - 30px,1180px)}
   .nav-shell{width:calc(100% - 30px)}
   .hero {
-    padding-top: 115px;
-    padding-bottom: 130px;}
+    height:auto;
+    min-height:0;
+    max-height:none;
+    padding-top:160px;
+    padding-bottom:55px;
+    overflow-x:hidden;
+    overflow-y:visible;
+  }
   .hero h1{font-size:3.35rem}
   .hero-text{font-size:14px}
   .hero-actions .btn{width:100%}
@@ -1224,19 +1236,19 @@ button{font:inherit}
   .hero-meta span{font-size:8px}
   /* HERO — MARCO RESPONSIVE */
 .medical-frame{
-  width: 100%;
-    max-width: 430px;
+  width:100%;
+  max-width:430px;
+  height:min(537.5px,calc(125vw - 37.5px));
+  min-height:0;
+  aspect-ratio:4 / 5;
+  margin:0 auto;
+  border-radius:23px;
+  overflow:hidden;
+}
 
-    height: auto;
-    min-height: 0;
-
-    aspect-ratio: 4 / 5;
-
-    margin: 0 auto;
-
-    border-radius: 23px;
-
-    overflow: hidden;
+.hero-visual{
+  display:block;
+  min-height:min(537.5px,calc(125vw - 37.5px));
 }
 
 /* CARRUSEL EN MÓVIL */
@@ -1291,7 +1303,11 @@ button{font:inherit}
   bottom:45px;
   left:8px;
 }
-  .trust-bar{width:calc(100% - 30px);grid-template-columns:1fr;margin: top 0;}
+  .trust-bar{
+    width:calc(100% - 30px);
+    grid-template-columns:1fr;
+    margin:25px auto 0!important;
+  }
   .trust-item{border-right:0!important;border-bottom:1px solid var(--line)!important}
   .trust-item:last-child{border-bottom:0!important}
   .services-grid{grid-template-columns:1fr}
@@ -1318,46 +1334,4 @@ button{font:inherit}
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*:before,*:after{transition:none!important}
-}
-/* =========================
-   FIX DEFINITIVO MOBILE HERO
-   ========================= */
-
-@media (max-width: 620px){
-
-  /* El hero debe contener completamente el carrusel */
-  .hero{
-    height:auto;
-    min-height:0;
-    padding-top:115px;
-    padding-bottom:70px;
-    overflow:hidden;
-  }
-
-  /* Marco del carrusel */
-  .medical-frame{
-    width:100%;
-    max-width:430px;
-    aspect-ratio:4 / 5;
-    height:auto;
-    margin:0 auto;
-    overflow:hidden;
-  }
-
-  /* Carrusel */
-  .hero-carousel{
-    width:86%;
-    height:86%;
-    margin:0 auto;
-    overflow:hidden;
-  }
-
-  /* La barra NO debe montarse sobre el hero */
-  .trust-bar{
-    width:calc(100% - 30px);
-    margin:25px auto 0 !important;
-    position:relative;
-    z-index:10;
-  }
-
 }
