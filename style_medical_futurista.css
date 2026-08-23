@@ -295,6 +295,202 @@ button{font:inherit}
   font-weight:800;
   letter-spacing:.16em;
 }
+
+/* =========================================================
+   HERO CAROUSEL
+   ========================================================= */
+
+.hero-carousel {
+    position: relative;
+    z-index: 2;
+
+    width: 78%;
+    height: 78%;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    cursor: pointer;
+
+    user-select: none;
+
+    touch-action: pan-y;
+}
+
+.carousel-track {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+.carousel-slide {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: scale(1.03);
+
+    transition:
+        opacity .45s ease,
+        transform .6s ease,
+        visibility .45s ease;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: scale(1);
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    user-select: none;
+
+    -webkit-user-drag: none;
+}
+
+
+/* =========================================================
+   FLECHAS
+   ========================================================= */
+
+.carousel-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    z-index: 8;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    transform: translateY(-50%);
+
+    border: 1px solid rgba(255,255,255,.20);
+
+    border-radius: 50%;
+
+    background: rgba(8,10,12,.70);
+
+    backdrop-filter: blur(10px);
+
+    color: #fff;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    transition:
+        opacity .25s ease,
+        background .25s ease,
+        color .25s ease,
+        transform .25s ease;
+}
+
+.carousel-prev {
+    left: 12px;
+}
+
+.carousel-next {
+    right: 12px;
+}
+
+.hero-carousel:hover .carousel-arrow,
+.hero-carousel:focus-within .carousel-arrow {
+    opacity: 1;
+}
+
+.carousel-arrow:hover {
+    background: var(--gold);
+
+    color: #111;
+
+    border-color: var(--gold);
+
+    transform: translateY(-50%) scale(1.08);
+}
+
+
+/* =========================================================
+   INDICADORES
+   ========================================================= */
+
+.carousel-dots {
+    position: absolute;
+
+    left: 50%;
+    bottom: 15px;
+
+    z-index: 9;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    transform: translateX(-50%);
+}
+
+.carousel-dot {
+    width: 7px;
+    height: 7px;
+
+    padding: 0;
+
+    border: 0;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.35);
+
+    cursor: pointer;
+
+    transition:
+        width .25s ease,
+        background .25s ease;
+}
+
+.carousel-dot.active {
+    width: 21px;
+
+    border-radius: 10px;
+
+    background: var(--gold);
+}
+
+
+/* =========================================================
+   LAS TARJETAS FLOTANTES NO DEBEN BLOQUEAR EL CARRUSEL
+   ========================================================= */
+
+.medical-card {
+    pointer-events: none;
+}
+
 .medical-card{
   position:absolute;
   z-index:5;
@@ -1025,10 +1221,75 @@ button{font:inherit}
   .hero-actions .btn{width:100%}
   .hero-meta{gap:14px;margin-top:38px}
   .hero-meta span{font-size:8px}
-  .medical-frame{border-radius:23px}
-  .medical-card{padding:9px 10px}
-  .medical-card-top{top:55px;right:-3px}
-  .medical-card-bottom{bottom:45px;left:-3px}
+  /* HERO — MARCO RESPONSIVE */
+.medical-frame{
+  width:100%;
+  max-width:430px;
+
+  height:auto;
+  min-height:0;
+
+  aspect-ratio:1 / 1.08;
+
+  margin:0 auto;
+
+  border-radius:23px;
+
+  overflow:hidden;
+}
+
+/* CARRUSEL EN MÓVIL */
+.hero-carousel{
+  width:78%;
+  height:78%;
+
+  border-radius:18px;
+}
+.carousel-arrow{
+  width:36px;
+  height:36px;
+
+  opacity:1;
+
+  background:rgba(8,10,12,.72);
+}
+
+.carousel-prev{
+  left:8px;
+}
+
+.carousel-next{
+  right:8px;
+}
+
+.carousel-dots{
+  bottom:10px;
+}
+
+.carousel-dot{
+  width:6px;
+  height:6px;
+}
+
+.carousel-dot.active{
+  width:18px;
+}
+
+/* TARJETAS FLOTANTES */
+.medical-card{
+  padding:9px 10px;
+  pointer-events:none;
+}
+
+.medical-card-top{
+  top:45px;
+  right:8px;
+}
+
+.medical-card-bottom{
+  bottom:45px;
+  left:8px;
+}
   .trust-bar{width:calc(100% - 30px);grid-template-columns:1fr;margin-top:-15px}
   .trust-item{border-right:0!important;border-bottom:1px solid var(--line)!important}
   .trust-item:last-child{border-bottom:0!important}
